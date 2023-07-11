@@ -1,0 +1,12 @@
+.section-about,
+.section-features,
+.section-tours {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .html {
+    font-size: 56.25%;
+  }
+}/*# sourceMappingURL=queries.css.map */

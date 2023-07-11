@@ -1,0 +1,73 @@
+body {
+  color: $color-grey-dark;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  padding: 3rem;
+  font-weight: 400;
+}
+
+.heading-primary {
+  line-height: 1.7;
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+  color: $color-white;
+  backface-visibility: hidden;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    font-weight: 400;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    /* animation-iteration-count: 3s; */
+    /* animation-delay: 3s; */
+  }
+
+  &--sub {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    display: block;
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+}
+
+.paragraph {
+  line-height: 1.8;
+  font-size: 1.6rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
